@@ -17,10 +17,10 @@
     <github.org>acegi</github.org>
     <github.repo>acegi-standard-project</github.repo>
     <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <maven.enforcer.java>1.8</maven.enforcer.java>
-    <maven.enforcer.mvn>3.5.4</maven.enforcer.mvn>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+    <maven.enforcer.java>8</maven.enforcer.java>
+    <maven.enforcer.mvn>3.6.3</maven.enforcer.mvn>
     <pmd.ruleset>${project.build.directory}/acegi-standard-resources/au/com/acegi/standard/rule-set-pmd.xml</pmd.ruleset>
     <pmd.version>7.5.0</pmd.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

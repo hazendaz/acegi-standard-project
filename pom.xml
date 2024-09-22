@@ -24,6 +24,7 @@
     <pmd.ruleset>${project.build.directory}/acegi-standard-resources/au/com/acegi/standard/rule-set-pmd.xml</pmd.ruleset>
     <pmd.version>7.5.0</pmd.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sortpom-plugin.version>4.0.0</sortpom-plugin.version>
     <trimStackTrace>false</trimStackTrace>
   </properties>
   <dependencyManagement>
@@ -77,7 +78,7 @@
         <plugin>
           <groupId>com.github.ekryd.sortpom</groupId>
           <artifactId>sortpom-maven-plugin</artifactId>
-          <version>4.0.0</version>
+          <version>${sortpom-plugin.version}</version>
           <configuration>
             <pomFile>${project.basedir}/pom.xml</pomFile>
             <encoding>${project.build.sourceEncoding}</encoding>

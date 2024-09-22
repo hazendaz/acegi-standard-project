@@ -44,11 +44,12 @@
             <artifactId>maven-invoker-plugin</artifactId>
             <configuration>
               <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
-              <settingsFile>src/it/settings.xml</settingsFile>
+              <settingsFile>${project.basedir}/src/it/settings.xml</settingsFile>
               <localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath>
               <postBuildHookScript>verify</postBuildHookScript>
               <noLog>false</noLog>
               <showErrors>true</showErrors>
+              <streamLogsOnFailures>true</streamLogsOnFailures>
             </configuration>
             <executions>
               <execution>

@@ -225,7 +225,6 @@
               <configuration>
                 <rules>
                   <dependencyConvergence/>
-                  <maxJdkVersion>${maven.enforcer.java}</maxJdkVersion>
                   <requireMavenVersion>
                     <version>[${maven.enforcer.mvn},)</version>
                   </requireMavenVersion>
@@ -238,7 +237,10 @@
                     <onlyWhenRelease>true</onlyWhenRelease>
                   </requireReleaseDeps>
                   <requireUpperBoundDeps/>
-                  <ignoredScopes>test</ignoredScopes>
+                  <enforceBytecodeVersion>
+                    <maxJdkVersion>${maven.enforcer.java}</maxJdkVersion>
+                    <ignoredScopes>test</ignoredScopes>
+                  </enforceBytecodeVersion>
                 </rules>
               </configuration>
             </execution>

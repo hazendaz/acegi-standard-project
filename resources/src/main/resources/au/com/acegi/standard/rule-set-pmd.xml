@@ -37,11 +37,7 @@
     <exclude name="DontImportSun"/>
     <exclude name="TestClassWithoutTestCases"/>
   </rule>
-  <rule ref="category/java/design.xml/ImmutableField">
-    <properties>
-      <property name="ignoredAnnotations" value="org.apache.maven.plugins.annotations.Parameter"/>
-    </properties>
-  </rule>
+  <rule ref="category/java/design.xml/ImmutableField"/>
   <rule ref="category/java/errorprone.xml/AssignmentInOperand">
     <properties>
       <property name="allowWhile" value="true"/>
